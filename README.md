@@ -1,7 +1,6 @@
-# Project DesignPatterns
 Code examples of how to use each Design pattern, using the Swift programming language.
 
-# Concepto Design Patterns
+# Design Patterns
 
 Son soluciones generales y reutilizables para problemas comunes que surgen en el diseño y desarrollo de aplicaciones de software. Y nos ayudan a resolver problemas de manera efectiva. Nos brinda:
 
