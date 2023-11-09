@@ -11,9 +11,14 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        testFactoryMethod()
     }
-
+    
+    func testFactoryMethod() {
+        let payment: Payment // padre
+        payment = PaymentFactory.buildPayment(typePayment: .CREDITCARD) // el tipo de hijo // el usuario elige que tipo 
+        payment.doPayment() // ejecuto
+    }
 
 }
 

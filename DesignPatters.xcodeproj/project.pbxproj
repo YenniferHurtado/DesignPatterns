@@ -13,6 +13,13 @@
 		CE33B7A62AFD35FB003DD7F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE33B7A42AFD35FB003DD7F0 /* Main.storyboard */; };
 		CE33B7A82AFD35FC003DD7F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE33B7A72AFD35FC003DD7F0 /* Assets.xcassets */; };
 		CE33B7AB2AFD35FC003DD7F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE33B7A92AFD35FC003DD7F0 /* LaunchScreen.storyboard */; };
+		CE33B7B42AFD3612003DD7F0 /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE33B7B32AFD3612003DD7F0 /* Payment.swift */; };
+		CE33B7B92AFD36FA003DD7F0 /* GooglePayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE33B7B82AFD36FA003DD7F0 /* GooglePayment.swift */; };
+		CE33B7BB2AFD3706003DD7F0 /* CreditCardPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE33B7BA2AFD3706003DD7F0 /* CreditCardPayment.swift */; };
+		CE33B7BD2AFD3711003DD7F0 /* DebitCardPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE33B7BC2AFD3711003DD7F0 /* DebitCardPayment.swift */; };
+		CE33B7BF2AFD3720003DD7F0 /* PaypalPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE33B7BE2AFD3720003DD7F0 /* PaypalPayment.swift */; };
+		CE33B7C12AFD38DC003DD7F0 /* TypePayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE33B7C02AFD38DC003DD7F0 /* TypePayment.swift */; };
+		CE33B7C32AFD3922003DD7F0 /* PaymentFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE33B7C22AFD3922003DD7F0 /* PaymentFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		CE33B7A72AFD35FC003DD7F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE33B7AA2AFD35FC003DD7F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE33B7AC2AFD35FC003DD7F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE33B7B32AFD3612003DD7F0 /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
+		CE33B7B82AFD36FA003DD7F0 /* GooglePayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePayment.swift; sourceTree = "<group>"; };
+		CE33B7BA2AFD3706003DD7F0 /* CreditCardPayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardPayment.swift; sourceTree = "<group>"; };
+		CE33B7BC2AFD3711003DD7F0 /* DebitCardPayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebitCardPayment.swift; sourceTree = "<group>"; };
+		CE33B7BE2AFD3720003DD7F0 /* PaypalPayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaypalPayment.swift; sourceTree = "<group>"; };
+		CE33B7C02AFD38DC003DD7F0 /* TypePayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypePayment.swift; sourceTree = "<group>"; };
+		CE33B7C22AFD3922003DD7F0 /* PaymentFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +70,62 @@
 		CE33B79D2AFD35FB003DD7F0 /* DesignPatters */ = {
 			isa = PBXGroup;
 			children = (
+				CE33B7B22AFD3604003DD7F0 /* FactoryMethod */,
 				CE33B79E2AFD35FB003DD7F0 /* AppDelegate.swift */,
-				CE33B7A02AFD35FB003DD7F0 /* SceneDelegate.swift */,
 				CE33B7A22AFD35FB003DD7F0 /* ViewController.swift */,
+				CE33B7A02AFD35FB003DD7F0 /* SceneDelegate.swift */,
 				CE33B7A42AFD35FB003DD7F0 /* Main.storyboard */,
 				CE33B7A72AFD35FC003DD7F0 /* Assets.xcassets */,
 				CE33B7A92AFD35FC003DD7F0 /* LaunchScreen.storyboard */,
 				CE33B7AC2AFD35FC003DD7F0 /* Info.plist */,
 			);
 			path = DesignPatters;
+			sourceTree = "<group>";
+		};
+		CE33B7B22AFD3604003DD7F0 /* FactoryMethod */ = {
+			isa = PBXGroup;
+			children = (
+				CE33B7C42AFD3DAC003DD7F0 /* Creator */,
+				CE33B7B72AFD36CA003DD7F0 /* Type */,
+				CE33B7B52AFD36AD003DD7F0 /* ProductSuperClass */,
+				CE33B7B62AFD36B8003DD7F0 /* ProductsSubClasses */,
+			);
+			path = FactoryMethod;
+			sourceTree = "<group>";
+		};
+		CE33B7B52AFD36AD003DD7F0 /* ProductSuperClass */ = {
+			isa = PBXGroup;
+			children = (
+				CE33B7B32AFD3612003DD7F0 /* Payment.swift */,
+			);
+			path = ProductSuperClass;
+			sourceTree = "<group>";
+		};
+		CE33B7B62AFD36B8003DD7F0 /* ProductsSubClasses */ = {
+			isa = PBXGroup;
+			children = (
+				CE33B7B82AFD36FA003DD7F0 /* GooglePayment.swift */,
+				CE33B7BA2AFD3706003DD7F0 /* CreditCardPayment.swift */,
+				CE33B7BC2AFD3711003DD7F0 /* DebitCardPayment.swift */,
+				CE33B7BE2AFD3720003DD7F0 /* PaypalPayment.swift */,
+			);
+			path = ProductsSubClasses;
+			sourceTree = "<group>";
+		};
+		CE33B7B72AFD36CA003DD7F0 /* Type */ = {
+			isa = PBXGroup;
+			children = (
+				CE33B7C02AFD38DC003DD7F0 /* TypePayment.swift */,
+			);
+			path = Type;
+			sourceTree = "<group>";
+		};
+		CE33B7C42AFD3DAC003DD7F0 /* Creator */ = {
+			isa = PBXGroup;
+			children = (
+				CE33B7C22AFD3922003DD7F0 /* PaymentFactory.swift */,
+			);
+			path = Creator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +199,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE33B7BD2AFD3711003DD7F0 /* DebitCardPayment.swift in Sources */,
+				CE33B7C32AFD3922003DD7F0 /* PaymentFactory.swift in Sources */,
 				CE33B7A32AFD35FB003DD7F0 /* ViewController.swift in Sources */,
+				CE33B7BB2AFD3706003DD7F0 /* CreditCardPayment.swift in Sources */,
+				CE33B7BF2AFD3720003DD7F0 /* PaypalPayment.swift in Sources */,
+				CE33B7B92AFD36FA003DD7F0 /* GooglePayment.swift in Sources */,
+				CE33B7C12AFD38DC003DD7F0 /* TypePayment.swift in Sources */,
 				CE33B79F2AFD35FB003DD7F0 /* AppDelegate.swift in Sources */,
+				CE33B7B42AFD3612003DD7F0 /* Payment.swift in Sources */,
 				CE33B7A12AFD35FB003DD7F0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
